@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style01.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <form action="login.php" method="post">
+        <fieldset class="personal-info">
+            <legend> Personal Information </legend>
+            <div class="container">
+                <div class="name">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Name">
+                </div><br>
+                <div class="password">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                <div class="email"><br>
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" placeholder="email id">
+                </div>
+                <div class="gender"><br>
+                    <label for="gender">Gender :</label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </div><br>
+                <div class="contact">
+                    <label for="contact">contact:</label>
+                    <input type="text" id="contact" placeholder="contact">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="add-info">
+            <legend> Additional Information </legend>
+            <div class="container">
+                <label for="Degree">Degree : </label>
+                <select name="qulification" id="Degree">
+                    <option value="school">school</option>
+                    <option value="higher">Higher</option>
+                    <option value="college">college</option>
+                </select>
+                <div><br>
+                    <label for="hobbies">Hobbies : </label>
+                    <input type="checkbox" name="hobbies" id="chess">
+                    <label for="chess">Playing chess</label>
+                    <input type="checkbox" name="hobbies" id="Reading books">
+                    <label for="Reading books">Reading Books</label>
+                </div>
+                <div><br>
+                    <label for="attach">Attach Photo : </label>
+                    <input type="file" name="attach">
+                </div>
+            </div>
+        </fieldset>
+        <div class="button">
+            <input type="submit" name="submit" id="submit">
+            <input type="reset" name="reset" id="reset">
+        </div>
+    </form>
+
+</body>
+
+</html>

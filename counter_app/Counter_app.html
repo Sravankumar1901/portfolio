@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter app </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        button {
+            font-size: 25px;
+
+        }
+
+        #num {
+            font-size: 90px;
+           text-align: center;
+           padding-bottom: 20px;
+
+        }
+        .button {
+            text-align: center;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <h1>Count App</h1>
+    <div id="num"> 0 </div>
+    <div class="button">
+        <button id="add">increase</button>
+        <button id="none">Reset</button>
+        <button id="sub">Decrease</button>
+    </div>
+    <script>
+        let x = document.getElementById('add');
+        let y = document.getElementById('sub');
+        let z = document.getElementById('none');
+
+        let res = document.getElementById('num');
+        let integer = 0;
+
+        x.addEventListener( 'click',function(){
+            integer += 1;
+            res.innerHTML = integer;
+        })
+        y.addEventListener('click',function(){
+            integer -= 1;
+            res.innerHTML = integer;
+        }) 
+        z.addEventListener('click',function(){
+            integer = 0;
+            res.innerHTML = integer;
+        }) 
+           </script>
+   
+</body>
+
+</html>

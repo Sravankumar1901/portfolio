@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQS</title>
+    <link rel="stylesheet" href="faq_styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <h1>FAQS</h1>
+    <div class="container">
+      <div class="faq">
+        <div class="faq-item">
+          <div class="question">
+            <span class="one">How can we know more about this course ? </span>
+            <span class="two"> <button class="expand">+</button></span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque
+            doloremque eligendi blanditiis placeat perferendis tempora quod vero
+            modi illum aut, error exercitationem voluptas repellat adipisci
+            deserunt pariatur deleniti delectus.
+          </p>
+        </div>
+        <div class="faq-item">
+          <div class="question">
+            <span class="one">How can we know more about this course ? </span>
+            <span class="two"> <button class="expand">+</button></span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quos
+            perferendis nesciunt eaque velit, reiciendis incidunt voluptatum
+            impedit enim omnis fuga consectetur mollitia aliquid fugit ipsum
+            quidem ut sunt ducimus.
+          </p>
+        </div>
+        <div class="faq-item">
+          <div class="question">
+            <span class="one">How can we know more about this course ? </span>
+            <span class="two"> <button class="expand">+</button></span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+            distinctio assumenda deserunt natus iusto aperiam non suscipit ea,
+            in asperiores consectetur tenetur reiciendis beatae, cupiditate
+            nostrum facilis placeat. Debitis, velit.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var btnArray = document.getElementsByClassName("expand");
+
+      for (let index = 0; index < btnArray.length; index++) {
+        const element = btnArray[index];
+        element.addEventListener("click", function () {
+          var pElement = this.parentNode.parentNode.parentNode.childNodes[3];
+          console.log(this.parentNode)
+          var visibility = pElement.style.display;
+          if (visibility == "none" || !visibility) {
+            pElement.style.display = "block";
+            this.innerHTML = "-";
+          } else if (visibility == "block") {
+            pElement.style.display = "none";
+            this.innerHTML = "+";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

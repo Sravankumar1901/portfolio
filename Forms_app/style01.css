@@ -1,0 +1,35 @@
+.personal-info{
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 30px;
+    
+}
+.container{
+    margin: 10px 10px;
+}
+.add-info{
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 30px;
+}
+.button{
+    text-align: center;
+    margin-top: 30px;
+}
+body{
+    background-image: linear-gradient(45deg,rgb(98, 185, 85),rgb(210, 239, 147) , rgb(157, 239, 249));
+}
+html,body{
+    font-family: 'Open Sans', sans-serif;
+ }
+ legend{
+     font-size: 18px;
+     border: 1px solid black;
+     font-weight: bold; 
+ }
+ #submit {
+     font-size: larger;
+ }
+ #reset{
+    font-size: larger;  
+ }
