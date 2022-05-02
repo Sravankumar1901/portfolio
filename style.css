@@ -4,10 +4,11 @@ body {
   padding: 0;
   background-color: #212529;
   font-family: "Open Sans", sans-serif;
+  font-size: 1em;
 }
 
 .inner-container {
-  margin: 0px 40px;
+  margin: 0em 2.5em;
   color: #fff;
 }
 
@@ -18,47 +19,134 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #292b2e;
-  padding: 10px 20px;
+  padding: 0.5em 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .container .menu-button {
+  display: inline;
   border: none;
   text-decoration: none;
   background-color: #212529;
-  margin-left: 3px;
+  margin-left: 0.1em;
   margin-right: 0;
-  padding: 3px 10px;
+  padding: 0.2em 0.8em;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .container .menu-button .menu-icon {
-  width: 34px;
-  height: 4px;
+  width: 2.4em;
+  height: 0.4em;
   background-color: #ffb742;
-  margin: 6px 0;
+  margin: 0.4em 0;
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin: 0%;
+    padding: 0%;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 50%;
+  }
+  .container .achor .links {
+    margin: 0%;
+    padding-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .inner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero article {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-me {
+    margin: 0%;
+    padding: 0%;
+  }
+  .about-me figure {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .skills {
+    display: block;
+    padding: none;
+  }
+  .skills .text {
+    display: block;
+    margin-left: 200px;
+    padding: none;
+  }
+  .skills .text p {
+    margin: 0%;
+    padding-right: 0%;
+  }
+  .skills .icons {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .Works {
+    display: block;
+  }
+  .Works .my-works {
+    margin: 0px;
+  }
+  .Works .work-space .two {
+    position: relative;
+    left: -40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    font-size: 60%;
+  }
 }
 
 .menu-button:hover {
   background-color: #0b0b0b;
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+  -webkit-transform: translateX(1em);
+          transform: translateX(1em);
 }
 
 .links {
-  font-size: 20px;
-  margin-top: 1%;
-  padding: 0%;
-  margin-left: 0%;
-  margin: 20px 220px;
+  font-size: 1.2em;
+  margin: 1.2em 12em;
 }
 
 .links a {
-  padding: 2px 34px;
-  margin-left: 18px;
+  padding: 0.1em 2.0em;
+  margin-left: 1.1em;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -68,8 +156,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 2px solid #ffb742;
-  border-radius: 15px;
+  border: 0.1em solid #ffb742;
+  border-radius: 1em;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
@@ -84,9 +172,9 @@ body {
   border: none;
   color: black;
   background-color: #ffb742;
-  border-radius: 20px;
+  border-radius: 1.6em;
   height: 0%;
-  padding: 12px 40px;
+  padding: 0.8em 2.4em;
   margin-right: 0%;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -95,18 +183,22 @@ body {
 .hire:hover {
   background-color: #0b0b0b;
   color: #f8f8f7;
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+  -webkit-transform: translateX(0.8em);
+          transform: translateX(0.8em);
 }
 
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 60px 0px;
+  margin: 3.75em 0px;
 }
 
 .hero article {
@@ -114,8 +206,8 @@ body {
 }
 
 .hero img {
-  width: 200px;
-  height: 200px;
+  width: 12.5em;
+  height: 12.5em;
   border-radius: 50%;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -129,26 +221,30 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 100px;
-  margin-left: -14px;
+  margin-bottom: 6.25em;
+  margin-left: -0.9em;
 }
 
 .activements button {
   background-color: #292b2e;
-  border: 2px solid #292b2e;
-  padding: 6px 60px;
-  margin-left: 20px;
-  border-radius: 10px;
+  border: 0.1em solid #292b2e;
+  padding: 0.4em 3.75em;
+  margin-left: 1.25em;
+  border-radius: 0.6em;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .activements button img {
-  width: 40px;
-  height: 40px;
+  width: 2.5em;
+  height: 2.5em;
   border-radius: 50%;
   position: relative;
   left: -20px;
@@ -288,7 +384,7 @@ body {
 
 .skills .text p {
   margin: 0;
-  padding-right: 150px;
+  padding-right: 0px;
 }
 
 .Works {
@@ -405,6 +501,10 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   text-align: center;
 }
 
