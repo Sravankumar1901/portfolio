@@ -1,10 +1,15 @@
-
+body{
+  background-color: #212529;
+  color: white;
+}
 .container-fluid{
   flex-direction: row-reverse;
   margin-left: 1%;
 }
+
+
 nav{
-  background-color:rgb(228, 224, 224) ;
+  background-color: rgba(245, 245, 245, 0.909);
 }
 .hero{
   display: flex;
@@ -69,6 +74,7 @@ nav{
   text-align: center;
   margin: 2% 2%;
   font-size: 3em;
+  color: black;
 }
 .work-space{
   margin: 2% 0%;
@@ -77,7 +83,7 @@ nav{
   justify-content: space-evenly;
 }
 .Works{
-  background-color: rgb(228, 224, 224);
+  background-color: whitesmoke;
 }
 .icon{
   font-size: 5.5em;
@@ -104,15 +110,25 @@ nav{
 .avatar-pic{
   border-radius: 10%;
   border: none;
+  background-color: #212529;
 }
 .proflie-pic{
   border-radius: 10%;
   border: none;
+  background-color: #212529;
 }
 .icon-pic{
   border-radius: 2%;
   border: none;
+  background-color: #212529;
 }
+.h3 {
+  color: #FFB742;
+}
+.h5{
+  color: #FFB742;
+}
+
 
 
 
