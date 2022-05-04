@@ -1,122 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio</title>
   </head>
-
   <body>
-    <header>
-      <nav class="container">
-        <button class="menu-button">
-          <div class="menu-icon"></div>
-          <div class="menu-icon"></div>
-          <div class="menu-icon"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand hire-me" href="#">Hire me</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="achor">
-          <div class="links">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+          </ul>
         </div>
-        <button class="hire">Hire me</button>
-      </nav>
-    </header>
-    <div class="inner-container"></div>
-    <section class="hero">
-      <figure><img src="/profile.jpeg" alt="" /></figure>
-      <article>
-        <h5>Hi, I am Sravankumar 👋</h5>
-        <h1>Creative designer & front-end developer</h1>
-        <p>
-          I design and code beautifully simple things, and I love what I do.
-        </p>
-      </article>
-    </section></div>
-    <div class="inner-container">
-    <section class="activements">
-      <button class="exp">
-        <figure>
-          <img
-            src="https://w7.pngwing.com/pngs/299/599/png-transparent-ribbon-award-computer-icons-medal-appreciation-angle-logo-symmetry-thumbnail.png"
-            alt=""
-          />
-        </figure>
-        <div>
-          <h1>4+</h1>
-          <p>Years of Experience</p>
-        </div>
-      </button>
-      <button class="projects">
-        <figure>
-          <img
-            src="https://previews.123rf.com/images/urfandadashov/urfandadashov1808/urfandadashov180815671/107447708-check-mark-icon-vector-isolated-on-white-background-for-your-web-and-mobile-app-design-check-mark-lo.jpg"
-            alt=""
-          />
-        </figure>
-        <div>
-          <h1>10+</h1>
-          <p>Completed Projects</p>
-        </div>
-      </button>
-      <button class="clients">
-        <figure>
-          <img src="https://thumbs.dreamstime.com/b/web-203740778.jpg" alt="" />
-        </figure>
-        <div>
-          <h1>10+</h1>
-          <p>Happy clients</p>
-        </div>
-      </button>
-    </section></div>
-     <div class="inner-container">
-    <section class="about-me">
-     
-        <article class="avatar">
-          <button class="title">WHO AM I</button>
-          <h1>About Me</h1>
-          <p>
-            Hi! I’m Sravankumar, and I’m a designer & developer who has passion
+      </div>
+    </nav>
+    <div class="containter">
+      <section class="hero">
+        <img src="/profile.jpeg" class="img-thumbnail proflie-pic" alt="..." width="200px">
+        <article class="hero-text">
+          <p class="h5">Hi, I am Sravankumar 👋</p>
+          <p class="h3">Creative designer & front-end developer</p>
+          <p class="h6"> I design and code beautifully simple things, and I love what I do.</p>
+        </article>
+      </section>
+    </div>
+    <div class="containter">
+      <section class="about-me">
+        <article class="aboutMe-text">
+          <p class="h3">About Me</p>
+          <p class="h6">Hi! I’m Sravankumar, and I’m a designer & developer who has passion
             for building clean web applications with intuitive functionality. I
-            enjoy the process of turning ideas into reality using creative
+            enjoy the prskillsocess of turning ideas into reality using creative
             solutions. I’m always curious about learning new skills, tools, and
             concepts. In addition to working on various solo full stack
             projects, I have worked with creative teams, which involves daily
             stand-ups and communications, source control, and project
-            management.
-          </p>
+            management.</p>
         </article>
-        <figure><img src="/avaatar.png" alt="" /></figure>
-      
-    </section>
-</div>
-   <div class="inner-container">
-    <section class="skills">
-        <div class="icons">
-          <button class="my-skill">MY SKILLS</button>
-          <figure><img src="/icons.png" alt="" /></figure>
-        </div>
-        <article class="text">
-          <h1>What My Programming Skills Included?</h1>
-          <p>
-            I develop simple, intuitive and responsive user interface that helps
+        <img src="/avaatar.png" class="img-thumbnail avatar-pic" alt="..." width="200px">
+      </section>
+    </div>
+    <div class="containter">
+      <section class="skills">
+        <img src="/icons.png" class="img-thumbnail icon-pic" alt="..." width="250px">
+        <article class="skills-text">
+          <p class="h3">What My Programming Skills Included?</p>
+          <p class="h6">I develop simple, intuitive and responsive user interface that helps
             users get things done with less effort and time with those
-            technologies.
-          </p>
+            technologies.</p>
         </article>
       </section>
-   </div>
+    </div>
     <section class="Works">
       <p class="my-works">MY WORKS</p>
       <article class="work-space">
@@ -153,7 +125,7 @@
           </a>
         </div>
         <div class="two">
-          <div class="icon"> 🙋‍♂️ </div>
+          <div class="icon">🙋‍♂️</div>
           <a href="/FAQ_app/FAQS _APP.html">
             <p>FAQS App</p>
           </a>
@@ -172,7 +144,8 @@
       <div class="two">
         <p>Soical media</p>
         <a href="https://www.instagram.com/manne_1901/">Instagram</a><br />
-        <a href="https://www.facebook.com/sravankumar.manne99/">Facebook</a><br />
+        <a href="https://www.facebook.com/sravankumar.manne99/">Facebook</a
+        ><br />
         <a href="https://github.com/">github</a><br />
       </div>
       <div class="three">
@@ -182,5 +155,24 @@
         <a href="#">Contact</a><br />
       </div>
     </footer>
+    
+    
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+   
   </body>
 </html>

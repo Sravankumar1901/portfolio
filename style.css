@@ -1,540 +1,105 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #212529;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-}
 
-.inner-container {
-  margin: 0em 2.5em;
-  color: #fff;
+.container-fluid{
+  flex-direction: row-reverse;
+  margin-left: 1%;
 }
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.hero{
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #292b2e;
-  padding: 0.5em 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-flow: row wrap;
+  margin: 3% 2%;
+  align-items: center;
 }
-
-.container .menu-button {
-  display: inline;
-  border: none;
-  text-decoration: none;
-  background-color: #212529;
-  margin-left: 0.1em;
-  margin-right: 0;
-  padding: 0.2em 0.8em;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+.hero-text{
+  padding: 2% 2%;
 }
-
-.container .menu-button .menu-icon {
-  width: 2.4em;
-  height: 0.4em;
-  background-color: #ffb742;
-  margin: 0.4em 0;
+.about-me{
+  margin: 2% 2% ;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
-
-@media (max-width: 800px) {
-  .container {
-    margin: 0%;
-    padding: 0%;
-    display: block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 50%;
-  }
-  .container .achor .links {
-    margin: 0%;
-    padding-right: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media(max-width:900px){
+  .about-me{
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    
   }
 }
-
-@media (max-width: 800px) {
-  .inner-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    margin-left: 40px;
+@media(max-width:900px){
+  .hero {
+    text-align: center;
+    justify-content: center;
   }
 }
-
-@media (max-width: 800px) {
-  .hero article {
-    margin-left: 50px;
-  }
-}
-
-@media (max-width: 800px) {
-  .about-me {
-    margin: 0%;
-    padding: 0%;
-  }
-  .about-me figure {
-    display: none;
-  }
-}
-
-@media (max-width: 800px) {
+@media(max-width:900px){
   .skills {
-    display: block;
-    padding: none;
+    text-align: center;
+    justify-content: center;
   }
-  .skills .text {
-    display: block;
-    margin-left: 200px;
-    padding: none;
-  }
-  .skills .text p {
-    margin: 0%;
-    padding-right: 0%;
-  }
-  .skills .icons {
+}
+@media(max-width:900px){
+  .three{
     display: none;
   }
 }
+.aboutMe-text{
+  width: 80%;
+}
+.skills{
+   display: flex;
+   flex-flow: row wrap;
+   margin-left: 2%;
 
-@media (max-width: 800px) {
-  .Works {
-    display: block;
-  }
-  .Works .my-works {
-    margin: 0px;
-  }
-  .Works .work-space .two {
-    position: relative;
-    left: -40px;
-  }
+}
+.skills-text{
+  width: 60%;
+  margin-left: 2%;
+}
+.my-works{
+  text-align: center;
+  margin: 2% 2%;
+  font-size: 3em;
+}
+.work-space{
+  margin: 2% 0%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.Works{
+  background-color: rgb(228, 224, 224);
+}
+.icon{
+  font-size: 5.5em;
+  transition: all 0.5s;
+}
+.icon:hover{
+  transform: translateY(10px);
 }
 
-@media (max-width: 800px) {
-  .footer {
-    font-size: 60%;
-  }
-}
-
-.menu-button:hover {
-  background-color: #0b0b0b;
-  -webkit-transform: translateX(1em);
-          transform: translateX(1em);
-}
-
-.links {
-  font-size: 1.2em;
-  margin: 1.2em 12em;
-}
-
-.links a {
-  padding: 0.1em 2.0em;
-  margin-left: 1.1em;
-  color: white;
+.work-space a {
   text-decoration: none;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 0.1em solid #ffb742;
-  border-radius: 1em;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.links a:hover {
-  background-color: #ffb742;
-  color: #0b0b0b;
-}
-
-.hire {
-  text-decoration: none;
-  border: none;
   color: black;
-  background-color: #ffb742;
-  border-radius: 1.6em;
-  height: 0%;
-  padding: 0.8em 2.4em;
-  margin-right: 0%;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
-
-.hire:hover {
-  background-color: #0b0b0b;
-  color: #f8f8f7;
-  -webkit-transform: translateX(0.8em);
-          transform: translateX(0.8em);
-}
-
-.hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.footer{
+  margin: 2% 0;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 3.75em 0px;
+  justify-content: space-around;
 }
-
-.hero article {
-  color: white;
-}
-
-.hero img {
-  width: 12.5em;
-  height: 12.5em;
-  border-radius: 50%;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.hero img:hover {
-  border-radius: 25%;
-}
-
-.activements {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 6.25em;
-  margin-left: -0.9em;
-}
-
-.activements button {
-  background-color: #292b2e;
-  border: 0.1em solid #292b2e;
-  padding: 0.4em 3.75em;
-  margin-left: 1.25em;
-  border-radius: 0.6em;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.activements button img {
-  width: 2.5em;
-  height: 2.5em;
-  border-radius: 50%;
-  position: relative;
-  left: -20px;
-  top: 8px;
-}
-
-.activements button:hover {
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-  background-color: #0b0b0b;
-}
-
-.exp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.exp div {
-  color: white;
-}
-
-.exp div h1 {
-  color: #ffb742;
-}
-
-.projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.projects div {
-  color: white;
-}
-
-.projects div h1 {
-  color: #ffb742;
-}
-
-.clients {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.clients div {
-  color: white;
-}
-
-.clients div h1 {
-  color: #ffb742;
-}
-
-.about-me {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.about-me .avatar .title {
-  padding: 10px 25px;
-  background-color: #292b2e;
-  color: #ffb742;
-  text-decoration: none;
+.avatar-pic{
+  border-radius: 10%;
   border: none;
-  border-radius: 15px;
-  font-size: large;
-  font-weight: bold;
-  margin-bottom: 5px;
 }
-
-.about-me .avatar h1 {
-  font-size: 40px;
-  margin: 0;
-  margin-bottom: 5px;
-}
-
-.about-me .avatar p {
-  margin: 0;
-}
-
-.about-me img {
-  width: 300px;
-  position: relative;
-}
-
-.avatar {
-  margin-top: 0;
-  padding-top: 0;
-  position: relative;
-  top: -30px;
-}
-
-.skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 60px;
-}
-
-.skills .icons button {
-  padding: 10px 25px;
-  background-color: #292b2e;
-  color: #ffb742;
-  text-decoration: none;
+.proflie-pic{
+  border-radius: 10%;
   border: none;
-  border-radius: 15px;
-  font-size: large;
-  font-weight: bold;
-  margin-bottom: 5px;
 }
-
-.skills .icons figure {
-  margin: 0;
-  margin-left: -22px;
-  display: inline-block;
-}
-
-.skills .icons img {
-  width: 400px;
-}
-
-.skills .text {
-  padding-right: 200px;
-}
-
-.skills .text h1 {
-  font-size: 40px;
-  margin: 0;
-  margin-bottom: 5px;
-  padding-right: 20px;
-}
-
-.skills .text p {
-  margin: 0;
-  padding-right: 0px;
-}
-
-.Works {
-  background-color: #0b0b0b;
-  border-radius: 0px 0px 0 0;
-}
-
-.Works .button-1 {
-  margin-left: 490px;
-  margin-bottom: 20px;
-}
-
-.Works .my-works {
-  display: inline;
-  padding: 10px 20px;
-  background-color: #eceef1;
-  color: #ffb742;
-  border: 20px soild #292b2e;
-  border-radius: 15px;
-  font-size: 30px;
-  font-weight: bold;
-  margin: 0px 500px;
-  position: relative;
-  top: -20px;
-}
-
-.Works button {
-  padding: 10px 20px;
-  background-color: #292b2e;
+.icon-pic{
+  border-radius: 2%;
   border: none;
-  border-radius: 15px;
-  font-size: 30px;
-  font-weight: bold;
 }
 
-.Works a {
-  text-decoration: none;
-  color: #ffb742;
-}
 
-.paypal img {
-  width: 600px;
-  margin: 0px 250px;
-}
 
-.form-color {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  left: -30px;
-}
-
-.form-color button {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.img-1 img {
-  width: 300px;
-  margin-right: 40px;
-}
-
-.img-2 img {
-  width: 359px;
-}
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  color: white;
-  margin-bottom: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.footer a:hover {
-  color: #ffb742;
-  text-decoration: underline;
-}
-
-.Works article {
-  margin-top: 80px;
-  position: relative;
-  top: -40px;
-  left: -30px;
-}
-
-.Works article .icon {
-  font-size: 60px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.icon:hover {
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
-}
-
-.work-space {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  text-align: center;
-}
-
-.work-space .two {
-  margin-left: 200px;
-  margin-right: 20px;
-}
-
-.work-space .one {
-  margin-left: 100px;
-}
-
-.footer {
-  margin-top: 20px;
-}
-
-.footer .one {
-  color: #ffb742;
-}
-
-.footer .two p {
-  color: #ffb742;
-}
-
-.footer .three p {
-  color: #ffb742;
-}
-
-.work-space a:hover {
-  color: #fafbf5;
-  text-decoration: underline;
-}
-/*# sourceMappingURL=style.css.map */
