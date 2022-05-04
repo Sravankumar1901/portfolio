@@ -43,6 +43,12 @@
     display: none;
   }
 }
+@media(max-width:900px){
+  .one-1 .icon{
+    margin-left: 30px;
+    
+  }
+}
 .aboutMe-text{
   width: 80%;
 }
@@ -83,6 +89,10 @@
   text-align: center;
   color: black;
 }
+.work-space a:hover{
+  text-decoration: overline;
+}
+
 .footer{
   margin: 2% 0;
   display: flex;
