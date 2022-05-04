@@ -3,6 +3,9 @@
   flex-direction: row-reverse;
   margin-left: 1%;
 }
+nav{
+  background-color:rgb(228, 224, 224) ;
+}
 .hero{
   display: flex;
   flex-flow: row wrap;
