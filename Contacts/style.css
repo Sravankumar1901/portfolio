@@ -77,9 +77,19 @@ nav{
   background-color: #FFB742;
 }
 .forms{
-  width: 50%;
-  margin-left: 10%;
+
+  width: 60%;
+  margin-left:10%;
 }
+.name{
+  margin-left: 3%;
+}
+@media(max-width:900px){
+  .three{
+    display: none;
+  }
+}
+
 
 
 

@@ -181,6 +181,7 @@ nav{
   color:#FFB742;
   margin: 0 3%;
   transition: all 0.5s;
+  width: 100%;
 }
 .navbar-light .navbar-nav .nav-link.active:hover{
   color: white;
@@ -196,6 +197,10 @@ nav{
 }
 .navbar-toggler{
   background-color: #FFB742;
+}
+.name{
+  margin-left: 3%;
+  
 }
 
 

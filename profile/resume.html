@@ -1,120 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>profile</title>
-    <style>
-      body {
-        background-image: linear-gradient(
-          45deg,
-          rgb(175, 234, 117),
-          rgb(178, 232, 239),
-          rgb(164, 231, 156)
-        );
-      }
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      .sub-heading {
-        /* background-color:lightgray ; */
-        padding: 15px 15px;
-        /* border: 1px solid lightgray; */
-        /* box-shadow: 3px 3px 3px 3px lightgray; */
-      }
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-      .para {
-        margin: 0 100px 0 20px;
-      }
-
-      li {
-        margin: 0 100px 0 20px;
-      }
-
-      hr {
-        background-color: black;
-        padding: 1px;
-      }
-
-      .buttons {
-        display: flex;
-        flex-flow: row wrap;
-      }
-
-      .buttons a {
-        flex: 1;
-        margin: 20px 20px;
-        padding: 30px 20px;
-        border: 2px solid black;
-        border-radius: 10px;
-        background-color: #a5e5f8;
-        text-decoration: none;
-        font-size: 15px;
-        color: rgb(64, 64, 240);
-        display: inline-flex;
-        justify-content: center;
-        flex-direction: row wrap;
-        box-shadow: 3px 3px 3px 3px rgb(155, 241, 241);
-      }
-
-      .name {
-        /* text-shadow: 0px 0px 10px rgb(169, 240, 56); */
-        color: rgb(56, 55, 55);
-      }
-
-      .buttons a:hover {
-        background-color: rgb(236, 233, 65);
-      }
-      .header{
-          display: flex;
-          justify-content: space-between;
-          margin: 0 2%;
-      }
-      .img-thumbnail{
-          border-radius: 25%;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>portfolio</title>
   </head>
-
   <body>
-    <header class="header">
-      <article>
-        <h2 class="name">Hi,I am Sravan Kumar</h2>
-        <div>Contact : 7396549727</div>
-        <div>Email : Mannesravankumar98@gmail.com</div>
-      </article>
-      <img src="/profile.jpeg" class="img-thumbnail proflie-pic" alt="..." width="150px">
-    </header>
-    <hr />
-
-    <section>
-      <h3 class="sub-heading">CAREER OBJECTIVE</h3>
-      <p class="para">
-        A challenging position employing my strong skill set and experience in
-        designing, developing managing growth, interesting in working with new
-        and challenging technologies/environment and put out all my skill for
-        the growth of both the organization and myself.
-      </p>
-      <h3 class="sub-heading">EDUCATIONAL QUALIFICATIONS</h3>
-      <p class="para">
-        <li>
-          B.com(computers) from hindavi degree college ecil in the year 2021.
+    <nav class="navbar navbar-expand-lg navbar-light bg-grey">
+      <div class="container-fluid">
+        <a class="navbar-brand hire-me" href="#">Hire me</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/profile/resume.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/Contacts/index.html"
+                >contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="containter-1">
+      <section class="hero">
+        <img
+          src="/profile.jpeg"
+          class="img-thumbnail proflie-pic"
+          alt="..."
+          width="180px"
+        />
+        <article class="hero-text">
+          <p class="h3">Hi, I am Sravankumar 👋</p>
+          <p class="h6">Creative designer & front-end developer</p>
+          <p class="h6">
+            I design and code beautifully simple things, and I love what I do.
+          </p>
+        </article>
+      </section>
+      <hr />
+      <div class="inner-container">
+        <p class="h3">CAREER OBJECTIVE</p>
+        <p>
+          A challenging position employing my strong skill set and experience in
+          designing, developing managing growth, interesting in working with new
+          and challenging technologies/environment and put out all my skill for
+          the growth of both the organization and myself.
+        </p>
+      </div>
+      <div class="inner-container">
+        <p class="h3">EDUCATIONAL QUALIFICATIONS</p>
+        <p>
+          <li>
+            B.com(computers) from hindavi degree college ecil in the year 2021.
         </li>
         <li>Intermediate from goutham jr college karkhana in the year 2018.</li>
         <li>SSC from good shephered high school in the year 2015.</li>
-      </p>
-      <h3 class="sub-heading">WORK EXPERIENCE:</h3>
-      <p class="para">
+        </p>
+      </div>
+      <div class="inner-container">
+        <p class="h3">WORK EXPERIENCE</p>
         <li>Worked as a team lead in reliance digital from 2019-2022</li>
-      </p>
-      <h3 class="sub-heading">Projects</h3>
-    </section>
-
-    <div class="buttons">
-      <a href="Background_changing_ap.html"> background changing app</a>
-      <a href="Counter_app.html">counter app</a>
-      <a href="calculator_app.html">caculator app</a>
-      <a href="FAQS _APP.html">FAQS</a>
-      <a href="menu/all.html">Menu</a>
+        
+      </div>
     </div>
+
+    <footer class="footer">
+      <div class="">
+        <p class="h3">Sravankumar</p>
+        <p>Creative designer & font-end developer.</p>
+      </div>
+      <div class="two">
+        <p>Soical media</p>
+        <a href="https://www.instagram.com/manne_1901/">Instagram</a><br />
+        <a href="https://www.facebook.com/sravankumar.manne99/">Facebook</a
+        ><br />
+        <a href="https://github.com/">github</a><br />
+      </div>
+      <div class="three">
+        <p>Useful Links</p>
+        <a href="#">Home</a><br />
+        <a href="#">About</a><br />
+        <a href="#">Contact</a><br />
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
