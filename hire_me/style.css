@@ -1,0 +1,98 @@
+body{
+    background-color: #212529;
+    color: white;
+  }
+  .container-fluid{
+    flex-direction: row-reverse;
+    margin-left: 1%;
+  }
+  
+  nav{
+    background-color: rgba(8, 8, 8, 0.909);
+  }
+  
+  .hero{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 3% 10%;
+    align-items: center;
+  }
+  .hero-text{
+    padding: 2% 2%;
+  }
+  
+  @media(max-width:900px){
+    .hero {
+      text-align: left;
+      justify-content: left;
+      margin-left: 8%;
+      margin-top: 8%;
+      margin-bottom: 8%;
+    }
+  }
+  
+  @media(max-width:900px){
+    .footer{
+      background-color: black;
+      padding: 4% 4%;
+    }
+  }
+  
+  .footer{
+    margin-top: 3%;
+    padding: 6% 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(9, 8, 8);
+  }
+  .proflie-pic{
+    border-radius: 10%;
+    border: none;
+    background-color: #212529;
+  }
+  .h3 {
+    color: #FFB742;
+  }
+  .h5{
+    color: #FFB742;
+  }
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color:#FFB742;
+    margin: 0 3%;
+    transition: all 0.5s;
+  }
+  .navbar-light .navbar-nav .nav-link.active:hover{
+    color: white;
+    transform: translateY(5px);
+  }
+  .navbar-light .navbar-brand{
+    color: #FFB742;
+    transition: all 0.5s;
+  }
+  .navbar-light .navbar-brand:hover{
+    color: white;
+    transform: translateY(5px);
+  }
+  .navbar-toggler{
+    background-color: #FFB742;
+  }
+  .forms{
+  
+    width: 60%;
+    margin-left:10%;
+  }
+  .name{
+    margin-left: 3%;
+  }
+  @media(max-width:900px){
+    .three{
+      display: none;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
