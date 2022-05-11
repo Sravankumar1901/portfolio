@@ -1,129 +1,184 @@
-body{
+body {
   background-color: #212529;
   color: white;
 }
-.container-fluid{
-  flex-direction: row-reverse;
+
+.container-fluid {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   margin-left: 1%;
 }
 
-nav{
+nav {
   background-color: rgba(8, 8, 8, 0.909);
 }
 
-.hero{
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   margin: 3% 2%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.hero-text{
+
+.hero-text {
   padding: 2% 2%;
 }
-.about-me{
-  margin: 2% 2% ;
+
+.about-me {
+  margin: 2% 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-@media(max-width:900px){
-  .about-me{
+
+@media (max-width: 900px) {
+  .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     text-align: left;
-    align-items: left;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
     margin-left: 8%;
     margin-top: 6%;
     margin-right: 0%;
     margin-bottom: 8%;
   }
 }
-@media(max-width:900px){
+
+@media (max-width: 900px) {
   .hero {
     text-align: left;
-    justify-content: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     margin-left: 8%;
     margin-top: 8%;
     margin-bottom: 8%;
   }
 }
-@media(max-width:900px){
-   .containter{
+
+@media (max-width: 900px) {
+  .containter {
     text-align: left;
-    justify-content: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     margin-left: 6%;
     margin-top: 12%;
     margin-bottom: 8%;
-   }
+  }
 }
 
-@media(max-width:900px){
-  .row{
+@media (max-width: 900px) {
+  .row {
     margin-left: 6%;
   }
 }
 
-@media(max-width:900px){
-  .three{
+@media (max-width: 900px) {
+  .three {
     display: none;
   }
 }
-@media(max-width:900px){
-  .one-1 .icon{
+
+@media (max-width: 900px) {
+  .one-1 .icon {
     margin-left: 0px;
-    
   }
 }
-@media(max-width:900px){
-  .footer{
+
+@media (max-width: 900px) {
+  .footer {
     background-color: black;
     padding: 4% 4%;
   }
 }
-@media(max-width:900px){
-.skills-text{
-  width: 90% !important;
-  margin-left: 2%;
+
+@media (max-width: 900px) {
+  .skills-text {
+    width: 90% !important;
+    margin-left: 2%;
   }
 }
 
-.aboutMe-text{
+.aboutMe-text {
   width: 85%;
   margin-top: 20px;
 }
-.skills{
-   display: flex;
-   flex-flow: row wrap;
-   margin-left: 2%;
 
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-left: 2%;
 }
-.skills-text{
+
+.skills-text {
   width: 60%;
   margin-left: 2%;
   margin-top: 20px;
 }
-.my-works{
+
+.my-works {
   text-align: center;
   margin: 1% 0%;
   font-size: 3em;
-  color:#FFB742;
-  
+  color: #FFB742;
 }
-.work-space{
+
+.work-space {
   margin: 1% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
-.Works{
+
+.Works {
   background-color: whitesmoke;
 }
-.icon{
+
+.icon {
   font-size: 5.5em;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.icon:hover{
-  transform: translateY(10px);
+
+.icon:hover {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .work-space a {
@@ -131,79 +186,100 @@ nav{
   text-align: center;
   color: black;
 }
-.work-space a:hover{
+
+.work-space a:hover {
   text-decoration: overline;
 }
 
-.footer{
+.footer {
   margin-top: 3%;
   padding: 6% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  background-color: rgb(9, 8, 8);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #090808;
 }
-.avatar-pic{
+
+.avatar-pic {
   border-radius: 10%;
   border: none;
   background-color: #212529;
 }
-.proflie-pic{
+
+.proflie-pic {
   border-radius: 10%;
   border: none;
   background-color: #212529;
 }
-.icon-pic{
+
+.icon-pic {
   border-radius: 2%;
   border: none;
   background-color: #212529;
   margin-left: -1%;
-  
 }
+
 .h3 {
   color: #FFB742;
 }
-.h5{
+
+.h5 {
   color: #FFB742;
 }
-.container{
+
+.container {
+  display: -ms-grid;
   display: grid;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.container a{
-  color:white;
+
+.container a {
+  color: white;
   text-decoration: none;
 }
-.container a:hover{
+
+.container a:hover {
   text-decoration: underline;
 }
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-  color:#FFB742;
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+  color: #FFB742;
   margin: 0 3%;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   width: 100%;
 }
-.navbar-light .navbar-nav .nav-link.active:hover{
+
+.navbar-light .navbar-nav .nav-link.active:hover {
   color: white;
-  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
-.navbar-light .navbar-brand{
+
+.navbar-light .navbar-brand {
   color: #FFB742;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.navbar-light .navbar-brand:hover{
+
+.navbar-light .navbar-brand:hover {
   color: white;
-  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
-.navbar-toggler{
+
+.navbar-toggler {
   background-color: #FFB742;
 }
-.name{
+
+.name {
   margin-left: 3%;
-  
 }
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */

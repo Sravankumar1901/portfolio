@@ -1,0 +1,72 @@
+body {
+  width: 100%;
+  background-color: black;
+}
+@media (max-width: 900px) {
+  .container {
+    width: 100vw;
+    position: relative;
+    top: 200px;
+    margin: 0;
+    padding: none;
+  }
+}
+
+.container {
+  margin-top: 4%;
+  width: 100%;
+  padding: 4%;
+  background-color: white;
+  .coins {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    margin: 32px auto;
+    .coins img {
+      width: 100%;
+    }
+    .heads,
+    .tails {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+  }
+}
+.tails {
+  transform: rotateX(180deg);
+}
+@keyframes spin-tails {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(1980deg);
+  }
+}
+
+@keyframes spin-heads {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(2160deg);
+  }
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin-top: 55px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px lightblue;
+  p {
+    font-size: 20px;
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}

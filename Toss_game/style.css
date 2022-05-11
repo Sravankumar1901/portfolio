@@ -1,0 +1,119 @@
+body {
+  width: 100%;
+  background-color: black;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 100vw;
+    position: relative;
+    top: 200px;
+    margin: 0;
+    padding: none;
+  }
+}
+
+.container {
+  margin-top: 4%;
+  width: 100%;
+  padding: 4%;
+  background-color: white;
+}
+
+.container .coins {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  margin: 32px auto;
+}
+
+.container .coins .coins img {
+  width: 100%;
+}
+
+.container .coins .heads,
+.container .coins .tails {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.tails {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+@-webkit-keyframes spin-tails {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(1980deg);
+            transform: rotateX(1980deg);
+  }
+}
+
+@keyframes spin-tails {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(1980deg);
+            transform: rotateX(1980deg);
+  }
+}
+
+@-webkit-keyframes spin-heads {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(2160deg);
+            transform: rotateX(2160deg);
+  }
+}
+
+@keyframes spin-heads {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(2160deg);
+            transform: rotateX(2160deg);
+  }
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  margin-top: 55px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 0 20px lightblue;
+          box-shadow: 0 0 20px lightblue;
+}
+
+.stats p {
+  font-size: 20px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */

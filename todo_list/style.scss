@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg,rgb(98, 185, 85),rgb(210, 239, 147) , rgb(157, 239, 249));
+
+}
+.container{
+    border: 2px solid black;
+    padding: 4% 6%;
+} 
+ li{
+    display: flex;
+    padding: 4%;
+    margin-left: -40px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(228, 238, 172);
+    border: 2px solid black;
+    height: 20px;
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        
+    }
+}
+.btn{
+    background-color: lightblue;
+    height: 25px;
+}
+.btn:hover{
+    background-color: white;
+}
+.input{
+    background-color: rgb(228, 238, 172);
+    border: 2px solid black;
+    height: 20px;
+}
+#error{
+    color: red;
+    
+}
