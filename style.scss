@@ -59,7 +59,7 @@ body{
   
   @media(max-width:900px){
     .row{
-      margin-left: 6%;
+      margin-left: -3%;
     }
   }
   
@@ -81,6 +81,11 @@ body{
     }
   }
   @media(max-width:900px){
+    .skills{
+      img{
+        margin-left: -3%;
+      }
+    }
   .skills-text{
     width: 90% !important;
     margin-left: 2%;
@@ -126,14 +131,15 @@ body{
     transform: translateY(10px);
   }
   
-  .work-space a {
-    text-decoration: none;
-    text-align: center;
-    color: black;
-  }
-  .work-space a:hover{
-    text-decoration: overline;
-  }
+  // .work-space a {
+  //   text-decoration: none;
+  //   text-align: center;
+  //   color: black;
+    
+  // }
+  // .work-space a:hover{
+  //   text-decoration: overline;
+  // }
   
   .footer{
     margin-top: 3%;
@@ -200,7 +206,15 @@ body{
   }
   .name{
     margin-left: 3%;
-    
+  }
+  .col{
+    .icon{
+      text-align: center;
+    }
+    p{
+      width: 100%;
+      text-align: center;
+    }
   }
   
   
